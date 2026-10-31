@@ -1,3 +1,5 @@
+// Gallery is a page component that allows users to search for TV shows and displays the search results.
+
 import { useState, useEffect, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 

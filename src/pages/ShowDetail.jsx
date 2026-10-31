@@ -1,3 +1,5 @@
+// ShowDetail is a page component that displays detailed information about a specific TV show.
+
 import { useState, useEffect } from "react";
 
 import { useParams, Link } from "react-router-dom";

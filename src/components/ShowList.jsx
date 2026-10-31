@@ -1,3 +1,5 @@
+// ShowList is a component that displays a list of TV shows.
+
 import ShowCard from "./ShowCard";
 
 function ShowList({ shows }) {

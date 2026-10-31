@@ -1,3 +1,5 @@
+// Helpers.js contains utility functions for formatting and processing data related to TV shows.
+
 export function stripHTML(html) {
     if (!html) {
         return "Not available";

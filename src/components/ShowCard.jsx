@@ -1,3 +1,7 @@
+// ShowCard is a component that displays information about a TV show.
+// The component fetches the main cast information for the show and displays it along with other show details such as the poster image, summary, premiere date, genres, and rating. 
+// If Cast information is not available or there is an error fetching it, appropriate messages are displayed.
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 

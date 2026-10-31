@@ -1,16 +1,23 @@
-# React + Vite
+# Assignment 5 : React - TVMaze Show Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Description
+This project is a React-based TV show gallery to which it uses TVmaze API to search for television shows and display information about that specific show. When users search up a show it will display to a minimum of 10 related shows, and by selecting the shows title it will then take the user to see it's details and display cast members. The application itself uses react and react router when navigating between the gallery and details page, but it also includes loading messages, error handling, and fallback text's for any missing information.
 
-Currently, two official plugins are available:
+## Steps on how to run Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Install node.js and npm 
+2. Open Terminal in project directory
+3. Install the projects independecies
+
+npm install
+
+4. start the server
+
+npm run dev
+
+5. Open the local URL that is provided by Vite into your browser
+
 
 ## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
 ## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
