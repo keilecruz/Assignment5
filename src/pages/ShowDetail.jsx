@@ -13,7 +13,6 @@ import {
     getRating
 } from "../utils/helpers.js";
 
-
 function ShowDetail() {
     const { id } = useParams();
 
@@ -26,6 +25,7 @@ function ShowDetail() {
     const [error, setError] = useState("");
 
 
+    // useEffect hook to fetch show details and cast information when the component mounts or when the show ID changes.
     useEffect(() => {
         const controller = new AbortController();
 
@@ -143,7 +143,8 @@ function ShowDetail() {
         show.webChannel?.name ||
         "Not available";
 
-
+// The component renders the detailed information about the show, including its name, summary, premiere date, last updated date, genres, rating, status, network or streaming channel, and the full cast list. 
+// It also provides a link to view the show on TVmaze.
     return (
         <main className="detail-page">
 

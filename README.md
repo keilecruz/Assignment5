@@ -9,15 +9,28 @@ This project is a React-based TV show gallery to which it uses TVmaze API to sea
 2. Open Terminal in project directory
 3. Install the projects independecies
 
+'''bash
 npm install
 
 4. start the server
 
+'''bash
 npm run dev
 
 5. Open the local URL that is provided by Vite into your browser
 
 
-## React Compiler
+## React Concepts
 
-## Expanding the ESLint configuration
+| # | Required React Concept | File(s) |
+|---|---|---|
+| 1 | Components and props | `App.jsx`, `SearchForm.jsx`, `ShowList.jsx`, `ShowCard.jsx`, `CastList.jsx`, `ShowDetail.jsx` |
+| 2 | Lists and keys | `ShowList.jsx`, `ShowCard.jsx`, `CastList.jsx` |
+| 3 | Conditional rendering | `Gallery.jsx`, `ShowList.jsx`, `ShowCard.jsx`, `ShowDetail.jsx` |
+| 4 | Controlled form | `SearchForm.jsx` |
+| 5 | State with `useState` | `Gallery.jsx`, `SearchForm.jsx`, `ShowCard.jsx`, `ShowDetail.jsx` |
+| 6 | Effects and fetch | `Gallery.jsx`, `ShowCard.jsx`, `ShowDetail.jsx` |
+| 7 | Lifted state | `Gallery.jsx`, `SearchForm.jsx`, `ShowList.jsx` |
+| 8 | Routing | `main.jsx`, `App.jsx`, `ShowCard.jsx`, `ShowDetail.jsx` |
+
+## Brief Reflection

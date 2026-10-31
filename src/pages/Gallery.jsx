@@ -8,6 +8,9 @@ import ShowList from "../components/ShowList.jsx";
 
 
 function Gallery() {
+
+    // State variables for managing the search query, search parameters, shows, search term, status, and error message.
+    // Currently, the default search query is set to "Gilmore Girls".
     const [query, setQuery] = useState("Gilmore Girls");
 
     const [searchParams, setSearchParams] = useSearchParams();
@@ -33,6 +36,7 @@ function Gallery() {
             return;
         }
 
+        // Set the status to "loading" before making the API request
         setStatus("loading");
 
         try {
@@ -73,7 +77,7 @@ function Gallery() {
 
     }, []);
 
-
+// useEffect hook to perform the initial search when the component mounts or when the search parameters change.
     useEffect(() => {
         const initialTerm =
             searchParams.get("q") || "Gilmore Girls";
@@ -88,7 +92,7 @@ function Gallery() {
         searchShows(term);
     }
 
-
+// The component renders the gallery page, including the search form, search results, and footer.
     return (
         <main className="gallery-page">
 
