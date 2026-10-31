@@ -12,15 +12,13 @@ This project is a React-based TV show gallery to which it uses TVmaze API to sea
 2. Open Terminal in project directory
 3. Install the projects independecies
 
-'''bash
-npm install
-'''
+   ```bash
+    npm install
 
 4. start the server
 
-'''bash
-npm run dev
-'''
+   ```bash
+    npm run dev
 
 5. Open the local URL that is provided by Vite into your browser
 
