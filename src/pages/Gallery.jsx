@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { useSearchParams } from "react-router-dom";
 
 import SearchForm from "../components/SearchForm.jsx";
 import ShowList from "../components/ShowList.jsx";
@@ -6,6 +7,8 @@ import ShowList from "../components/ShowList.jsx";
 
 function Gallery() {
     const [query, setQuery] = useState("Gilmore Girls");
+
+    const [searchParams, setSearchParams] = useSearchParams();
 
     const [shows, setShows] = useState([]);
 
@@ -70,11 +73,16 @@ function Gallery() {
 
 
     useEffect(() => {
-        searchShows("Gilmore Girls");
-    }, [searchShows]);
+        const initialTerm =
+            searchParams.get("q") || "Gilmore Girls";
+
+        setQuery(initialTerm);
+        searchShows(initialTerm);
+    }, [searchShows, searchParams, setQuery]);
 
 
     function handleSearch(term) {
+        setSearchParams({ q: term });
         searchShows(term);
     }
 
